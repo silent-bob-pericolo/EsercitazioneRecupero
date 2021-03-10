@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using EserciziLibrary;
 
 namespace EserciziLibraryTest
 {
@@ -6,9 +7,12 @@ namespace EserciziLibraryTest
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void CalcoloPercentualeTest()
         {
-            
+            double numero = 200;
+            double scontoaspettato = 20;
+            double scontoeffettivo = GestioneTest.Sconto(numero);
+            Assert.AreEqual(scontoaspettato, scontoeffettivo);
         }
     }
 }
