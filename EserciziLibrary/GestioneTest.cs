@@ -15,5 +15,11 @@ namespace EserciziLibrary
             double risultato = numero + incremento;
             return risultato;
         }
+        public static double LatoQuadrato(double area)
+        {
+            double lato = Math.Sqrt(area);
+            return lato;
+
+        }
     }
 }

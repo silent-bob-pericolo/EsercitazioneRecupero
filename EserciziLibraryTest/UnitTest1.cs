@@ -19,9 +19,17 @@ namespace EserciziLibraryTest
         {
             double inc = 50;
             double numero = 40;
-            double incrementoaspettato =60;
-            double incrementoeffetivo = GestioneTest.Incremento(numero,inc);
+            double incrementoaspettato = 60;
+            double incrementoeffetivo = GestioneTest.Incremento(numero, inc);
             Assert.AreEqual(incrementoaspettato, incrementoeffetivo);
+        }
+        [TestMethod]
+        public void CalcoloLatoTest()
+        {
+            double area = 25;
+            double latoaspettato = 5;
+            double latoeffettivo = GestioneTest.LatoQuadrato(area);
+            Assert.AreEqual(latoaspettato, latoeffettivo);
         }
     }
 }
