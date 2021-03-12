@@ -14,5 +14,14 @@ namespace EserciziLibraryTest
             double scontoeffettivo = GestioneTest.Sconto(numero);
             Assert.AreEqual(scontoaspettato, scontoeffettivo);
         }
+        [TestMethod]
+        public void CalcoloIncremento()
+        {
+            double inc = 50;
+            double numero = 40;
+            double incrementoaspettato =60;
+            double incrementoeffetivo = GestioneTest.Incremento(numero,inc);
+            Assert.AreEqual(incrementoaspettato, incrementoeffetivo);
+        }
     }
 }

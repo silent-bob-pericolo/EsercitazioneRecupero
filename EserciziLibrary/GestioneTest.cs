@@ -9,5 +9,11 @@ namespace EserciziLibrary
         {
             return numero / 100 * 10;
         }
+        public static double Incremento(double numero, double inc)
+        {
+            double incremento = numero * inc / 100;
+            double risultato = numero + incremento;
+            return risultato;
+        }
     }
 }
